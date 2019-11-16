@@ -236,7 +236,7 @@ body {
 
 /*Portfolio - Justice.gov*/
 .justiceRight{
-    background-image: url('../images/justice gov left black.png');
+    background-image: url('../images/justice%20gov%20left%20black.png');
     width: 947px;
     height: 913px;
 }
