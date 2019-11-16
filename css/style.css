@@ -209,7 +209,7 @@ body {
 
 /*Portfolio - TripPal*/
 .tripPalLeft{
-    background-image: url('/trippal3.png');
+    background-image: url('../images/trippal3.png');
     width: 947px;
     height: 913px;
     margin-left: auto;
@@ -236,7 +236,7 @@ body {
 
 /*Portfolio - Justice.gov*/
 .justiceRight{
-    background-image: url('/justice%20gov%20left%20black.png');
+    background-image: url('../images/justice%20gov%20left%20black.png');
     width: 947px;
     height: 913px;
 }
@@ -288,7 +288,7 @@ body {
 }
 
 .cliqueLeft {
-    background-image: url('/images/clique3.png');
+    background-image: url('../images/clique3.png');
     width: 959px;
     height: 913px;
     margin-left: auto;
