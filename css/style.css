@@ -209,7 +209,7 @@ body {
 
 /*Portfolio - TripPal*/
 .tripPalLeft{
-    background-image: url('/Homework_17/images//trippal3.png');
+    background-image: url('/Homework_17/images/trippal3.png');
     width: 947px;
     height: 913px;
     margin-left: auto;
@@ -288,7 +288,7 @@ body {
 }
 
 .cliqueLeft {
-    background-image: url('../images/clique3.png');
+    background-image: url('/Homework_17/images/clique3.png');
     width: 959px;
     height: 913px;
     margin-left: auto;
