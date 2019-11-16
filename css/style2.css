@@ -1,0 +1,973 @@
+body {
+    background-color: black;
+    font-family: SF Pro Display;
+    color: black;
+    overflow-x: hidden;
+}
+
+/*Desktop Navigation*/  
+.nav {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    
+}
+
+.right a{
+    float: right;
+    color: rgb(70, 70, 70);
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.right a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.left a{
+    float: left;
+    color: rgb(70, 70, 70);
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.left a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.left, .right {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        display: none;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left {
+        display: none;
+    }
+}
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: rgb(70, 70, 70);
+    background-color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: white;
+    color: rgb(70, 70, 70);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: white;
+    color: rgb(70, 70, 70);
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: rgb(70, 70, 70);
+    color: white;
+  }
+
+  @media (min-width: 1025px) {
+    /* Style the navigation menu */
+    .topnav nav {
+        display: none;
+    }
+    
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    /* Style navigation menu links */
+    .topnav a {
+        display: none;
+    }
+    
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        display: none;
+    }
+    
+    /* Add a grey background color on mouse-over */
+    .topnav a:hover {
+        display: none;
+    }
+    
+    /* Style the active link (or home/logo) */
+    .active {
+        display: none;
+    }
+}
+
+/*.element {
+	text-shadow:
+		-1px -1px 0#C5D3D9,
+		1px -1px 0 #C5D3D9,
+		-1px 1px 0 #C5D3D9,
+		1px 1px 0 #C5D3D9;
+}*/
+
+
+/*Image
+.banner {
+    background: white;
+    height: 230px;
+    background-image: url('file:///C:/Users/jhuan/Documents/GitHub/HW-MyFirstLayout/image/avi.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}*/
+
+.style {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+/*Welcome/Intro*/
+.bio {
+    display: flex;
+    /*background-color: black;*/
+    height: 220px;
+    width: 100%;
+}
+
+.bioLeft, .bioRight {
+    width: 100%;
+
+}
+
+.bioLeft h1 {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    width: 90%;
+    float: right;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.bioRight p {
+    /*color: rgba(225, 225, 225, 0.7);*/
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    width: 50%;
+    padding-top: 20px;
+    float: left;
+}
+
+/*.text {
+    background: rgba(0, 0, 0, 0.952);
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}*/
+ 
+
+/*Portfolio - TripPal*/
+.tripPalLeft{
+    background-image: url('C:/Users/jhuan/Documents/GitHub/Homework_17/images/trippal3.png');
+    width: 947px;
+    height: 913px;
+    margin-left: auto;
+}
+
+.tripPalRight {
+    background-color: white;
+    /*width: 959px;
+    height: 913px;*/
+}
+
+.tripPalRight img {
+    padding-top: 30%;
+    padding-left: 60px;
+}
+
+.tripPalRight p {
+    font-size: 25px;
+    text-align: left;
+    padding-right: 100px;
+    padding-left: 100px;
+    color: #363636;
+}
+
+/*Portfolio - Justice.gov*/
+.justiceRight{
+    background-image: url('C:/Users/jhuan/Documents/GitHub/Homework_17/images/justice gov left black.png');
+    width: 947px;
+    height: 913px;
+}
+
+.justiceLeft {
+    background-color: white;
+    width: 959px;
+    height: 913px;
+    margin-left: auto;
+    align-content: center;
+}
+
+.justiceLeft img {
+    padding-top: 40%;
+    padding-bottom: 30px;
+    width: 60%;
+    padding-left: 200px;
+}
+
+.justiceLeft p {
+    font-size: 25px;
+    text-align: left;
+    padding-right: 50px;
+    padding-left: 200px;
+    color: #363636;
+}
+
+/*Portfolio - Clique*/
+.cliqueRight {
+    background-color: white;
+    width: 947px;
+    height: 913px;
+}
+
+
+.cliqueRight img {
+    padding-bottom: 30px;
+    width: 30%;
+    padding-top: 30%;
+    padding-left: 80px;
+}
+
+.cliqueRight p {
+    font-size: 25px;
+    text-align: left;
+    padding-right: 100px;
+    padding-left: 80px;
+    color: #505050;
+}
+
+.cliqueLeft {
+    background-image: url('C:/Users/jhuan/Documents/GitHub/Homework_17/images/clique3.png');
+    width: 959px;
+    height: 913px;
+    margin-left: auto;
+}
+
+
+
+/*MOBILE*/
+/*TripPal Mobile*/
+.tripPalMobile {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.tripPalMobile p {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.tripPalLogo {
+    width: 50%;
+}
+
+@media only screen and (min-width: 1025px) {
+    .tripPalMobile {
+        display: none;
+    }
+    
+    .tripPalMobile p {
+        display: none;
+    }
+
+    .tripPalLogo {
+        display: none;
+    }
+
+    .tripPalLogo img {
+        display: none;
+    }
+
+    .tripPalMobile img {
+        display: none;
+    }
+}
+
+/*Justice gov Mobile*/
+.justiceMobile {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.justiceMobile p {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.justiceLogo {
+    width: 70%;
+}
+
+@media only screen and (min-width: 1025px) {
+    .justiceMobile {
+        display: none;
+    }
+    
+    .justiceMobile p {
+        display: none;
+    }
+
+    .justiceMobile img {
+        display: none;
+    }
+    
+    .justiceLogo {
+        display: none;
+    }
+
+    .justiceLogo img {
+        display: none;
+    }
+}
+
+/*Clique Mobile*/
+.cliqueMobile {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.cliqueMobile p {
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.cliqueLogo {
+    width: 70%;
+}
+
+@media only screen and (min-width: 1025px) {
+    .cliqueMobile {
+        display: none;
+    }
+    
+    .cliqueMobile p {
+        display: none;
+    }
+
+    .cliqueMobile img {
+        display: none;
+    }
+    
+    .cliqueLogo {
+        display: none;
+    }
+
+    .cliqueLogo img {
+        display: none;
+    }
+}
+
+/*Cards*/
+* {
+    box-sizing: border-box;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .column p {
+      padding-bottom: 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {
+      margin: 0 -5px;
+    
+    }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns 
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }*/
+  
+  /* Style the counter cards */
+  .card {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    padding: 16px;
+    /*text-align: center;*/
+    color: white;
+    height: 913px;
+    width: 947px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    
+      /* Float four columns side by side */
+      .column {
+        display: none;
+      }
+    
+      .column p {
+        display: none;
+      }
+      
+      /* Remove extra left and right margins, due to padding */
+      .row {
+        display: none;
+        
+        }
+      
+      /* Clear floats after the columns */
+      .row:after {
+          display: none;
+      }
+      
+      /* Responsive columns
+      @media screen and (max-width: 600px) {
+        .column {
+            display: none;
+        }
+      } */
+      
+      /* Style the counter cards */
+      .card {
+        /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+        padding: 16px;
+        /*text-align: center;*/
+        color: white;
+        height: 913px;
+        width: 947px;
+      }
+    }
+
+/*About Me*/
+.about {
+    background-color: rgb(250, 244, 234);
+    height: 800px;
+}
+
+.aboutHeader {
+    font-family: SF Pro Display;
+    color: #AEAEAE;
+    font-size: 100px;
+    padding: 20px;
+    padding-left:40px;
+}
+
+.aboutBio {
+    font-family: SF Pro Display;
+    color: #AEAEAE;
+    font-size: 40px;
+    padding: 20px;
+    padding-left:40px;
+    width: 50%;
+}
+
+.aboutQuote {
+    font-family: SF Pro Display;
+    color: #AEAEAE;
+    font-size: 30px;
+    padding: 20px;
+    width: 50%;
+    float: right;
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .about {
+        display: none;
+    }
+    
+    .aboutHeader {
+        display: none;
+    }
+    
+    .aboutBio {
+        display: none;
+    }
+    
+    .aboutQuote {
+        display: none;
+    }
+}
+
+/*About Mobile*/
+.aboutMobile {
+    background-color: rgb(250, 244, 234);
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    position: relative;
+    font-family: SF Pro Display;
+    color: #AEAEAE;
+}
+
+.aboutMobile p {
+    font-size: 18px;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: justify;
+}
+
+.aboutTitle {
+    padding: 25px;
+} 
+
+@media only screen and (min-width: 1025px) {
+    .aboutMobile {
+        display: none;
+    }
+    
+    .aboutMobile p {
+        display: none;
+    }
+    
+    .aboutTitle {
+        display: none;
+    } 
+}
+
+/*Contact*/
+.contact {
+    background-color: #C5D3D9;
+    height: 500px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #192225;
+    color: #FAF4EA;
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+
+  .btn p {
+      font-size: 40px;
+      font-family: SF Pro Display;
+      font-weight: 800;
+  }
+
+  /*Contact Mobile*/
+.contactMobile {
+    background-color: #C5D3D9;
+    height: 500px;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    text-align: center;
+    padding: 25px;
+}
+
+.btnMobile {
+    background-color: #192225;
+    color: #FAF4EA;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.btnMobile p {
+    font-size: 40px;
+    font-family: SF Pro Display;
+    font-weight: 800;
+}
+
+@media only screen and (min-width: 1025px) {
+    .contactMobile {
+        display: none;
+    }
+    
+    .btnMobile {
+        display: none;
+    }
+    
+    .btnMobile p {
+        display: none;
+    }
+}
+
+  /* LinkedIn */
+  .ln {
+    color: #FAF4EA;
+    width: 270px;
+    height: 120px;
+  }
+
+  .ln a {
+    color: #FAF4EA;
+    width: 270px;
+    height: 120px;
+  }
+  
+  .ln:hover {
+    background: #FAF4EA;
+    color: #192225;
+    text-decoration: none;
+  }
+
+  .ln:hover a {
+    background: #FAF4EA;
+    color: #192225;
+    text-decoration: none;
+  }
+
+    
+  /* Instagram */
+  .ig {
+    color: #FAF4EA;
+    width: 270px;
+    height: 120px;
+  }
+
+  .ig a {
+    color: #FAF4EA;
+    width: 270px;
+    height: 120px;
+  }
+  
+  .ig:hover {
+    background: #FAF4EA;
+    color: #192225;
+    text-decoration: none;
+  }
+
+  .ig:hover a {
+    background: #FAF4EA;
+    color: #192225;
+    text-decoration: none;
+  }
+
+   /* Behance */
+   .be {
+    color: #FAF4EA;
+    width: 270px;
+    height: 120px;
+  }
+
+  .be a {
+    color: #FAF4EA;
+    width: 270px;
+    height: 120px;
+  }
+  
+  .be:hover {
+    background: #FAF4EA;
+    color: #192225;
+    text-decoration: none;
+  }
+
+  .be:hover a {
+    background: #FAF4EA;
+    color: #192225;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .contact {
+        display: none;
+    }
+
+  }
+
+/*Footer*/
+.footer {
+    background-color: #192225;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerHead {
+    font-size: 60px;
+    color: #FAF4EA;
+    font-family: SF Pro Display;
+    padding-bottom: 80px;
+    padding-left: 40px;
+}
+
+.footerInvite {
+    font-size: 70px;
+    color: #C5D3D9;
+    font-family: SF Pro Display;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    width: 80%;
+}
+
+.footerEmail {
+    font-size: 65px;
+    color: #FAF4EA;
+    font-family: SF Pro Display;
+    padding-left: 40px;
+}
+
+.footerEmail a {
+    font-size: 65px;
+    color: #FAF4EA;
+    font-family: SF Pro Display;
+}
+
+.footerEmail a:hover{
+    text-decoration: none;
+    color: #FAF4EA;
+}
+
+.footerSkills {
+    font-size: 35px;
+    color: #FAF4EA;
+    font-family: SF Pro Display;
+    font-weight: 600;
+}
+
+/*Footer Mobile*/
+.footerMobile {
+    background-color: #192225;
+    height: 650px;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+
+.footerHeadMob {
+    font-size: 30px;
+    color: #FAF4EA;
+    font-family: SF Pro Display;
+    padding: 40px;
+}
+
+.footerInviteMob {
+    font-size: 20px;
+    color: #C5D3D9;
+    font-family: SF Pro Display;
+    padding-left: 40px;
+    width: 80%;
+}
+
+.footerEmailMob {
+    font-size: 25px;
+    color: #FAF4EA;
+    font-family: SF Pro Display;
+    padding-left: 40px;
+}
+
+.footerEmailMob a {
+    font-size: 25px;
+    color: #FAF4EA;
+    font-family: SF Pro Display;
+}
+
+.footerSkillsMob {
+    font-size: 15px;
+    color: #FAF4EA;
+    font-family: SF Pro Display;
+    font-weight: 600;
+    padding: 40px;
+}
+
+@media only screen and (min-width: 1025px) {
+    .footerMobile {
+        display: none;
+    }
+}
+/*Grids*/
+.grid-containers {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /*display: flex;*/
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer {
+        display: none;
+    }
+    .grid-containers {
+        display: none;
+    }
+    .footerSkills {
+        display: none;
+    }
+}
+
+
+/*Back to the Top*/
+.backTop {
+    height: 80px;
+    background-color: white;
+    color: #192225;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backTop p {
+    font-weight: 700;
+    color: #192225;
+}
+
+.backTop a:hover{
+    text-decoration: none;
+    color: #192225;
+}
+
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 5%;
+    left: 95%;
+    max-width: 60px;
+    width: 100%;
+    font-size: 12px;
+    border-color: #192225;
+    background-color: #192225;
+    padding: .5px;
+    border-radius: 4px;
+    font-family: SF Pro Display;
+}
+
+#myBtn a {
+    text-decoration: none;
+}
+
+/*On Hover Color Change*/
+#myBtn:hover {
+    background-color: #C5D3D9;
+    text-decoration: none;
+}
+
+#myBtn:hover a {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    #myBtn {
+        position: fixed;
+        bottom: 10px;
+        float: right;
+        right: 20%;
+        left: 80%;
+        max-width: 60px;
+        width: 100%;
+        font-size: 12px;
+        border-color: #19222594 ;
+        background-color: #19222594;
+        padding: .5px;
+        border-radius: 4px;
+        font-family: SF Pro Display;
+    }
+    
+    #myBtn a {
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+/*.social {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+/*Social Media
+.socialIcons {
+    justify-content: space-around;
+    font-size: 18px;
+    align-content: center;
+    justify-content: center;
+}
+
+.large-icon {
+    font-size: 50px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    padding-top: 10px;
+}*/
