@@ -164,6 +164,13 @@ body {
     height: auto;
   }
 
+  @media only screen and (max-width: 1024px) {
+    .style {
+        display: none;
+    }
+  }
+
+
 
 /*Welcome/Intro*/
 .bio {
